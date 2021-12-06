@@ -1,7 +1,6 @@
 module Day2 where
 
-import System.IO
-import Data.List (transpose)
+import System.IO ( openFile, hGetContents, IOMode(ReadMode) )
 
 data Command = Forward Int | Down Int | Up Int | Unknown deriving(Show)
 

@@ -1,6 +1,6 @@
 module Day1 where
 
-import System.IO
+import System.IO ( openFile, hGetContents, IOMode(ReadMode) )
 import Data.List (transpose)
 
 solvePart1 :: [Int] -> Int
