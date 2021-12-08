@@ -1,6 +1,6 @@
 {-# OPTIONS_GHC -Wno-incomplete-patterns #-}
 
-module Main where
+module Day6 where
 
 import System.IO ( openFile, hGetContents, IOMode(ReadMode) )
 import Data.List (sort, group)
