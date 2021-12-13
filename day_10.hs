@@ -45,7 +45,5 @@ main = do
     let lines = wordsWhen (== '\n') content
     let invalidSums =  map (\e -> checkInvalidLine e "") lines
     let part2Sums = sort $ filter (/= 0) $ map (\e -> part2 e "") lines
-    print invalidSums
     print $ sum $ invalidSums
-    print $ part2Sums
     print $ part2Sums !! ((length part2Sums) `div` 2)
